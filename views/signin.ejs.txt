@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        .logo img {
+            width: 100px;
+            height: 100px;
+        }
+        .headings{
+            text-align: center;
+            background-color: rgb(39, 30, 43);
+            color:lightpink;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+        #navbar {
+            background-color: rgb(27, 27, 27);
+            position: fixed;
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 8vh;
+            background-color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+          
+        
+          
+        .nav-options {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+        }
+        .nav-options li {
+            list-style: none;
+        }
+        .nav-options a {
+            color: rgb(214, 123, 19);
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 15px;
+        }
+        .nav-options a:hover {
+            color: aquamarine;
+        }
+        .home {
+            background-image:url("https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg");
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            color: rgb(180, 178, 178);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            padding: 0px 50px;
+            text-align: right;
+        }
+          
+        .intro {
+            text-align:center;
+            background-color:lightblue;
+            color:blue;
+            font-size: 30px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id = "navbar">
+            <div class="logo">
+                <img src ="https://thumbs.dreamstime.com/b/food-icon-isolated-black-background-simple-vector-logo-food-icon-isolated-black-background-164144307.jpg">
+            </div>
+            <ul class="nav-options">
+                <li><a href="/signin">LOGIN</a></li>
+                <li><a href="/signup">SIGNUP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="intro">
+            <h1>WELCOME TO LOGIN PAGE</h1>
+            <form action="/signinsubmit" method="GET">
+                Email ID : <input type="text" name="email"><br>
+                Password : <input type="password" name="password"><br>
+            <button class="btn" type="submit" style="background-color:aqua; float: center; padding: 15px 32px;">LOGIN</button>
+        </form>
+        </div>
+    </section>  
+
+    
+            
+</body>
+</html>
