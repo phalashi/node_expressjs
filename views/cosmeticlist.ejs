@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+          
+        html {
+            scroll-behavior: smooth;
+        }
+        .headings{
+            text-align: center;
+            background-color: rgb(39, 30, 43);
+            color:lightpink;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+        .logo img {
+            width: 100px;
+            height: 100px;
+        }
+        #navbar {
+            background-color: rgb(27, 27, 27);
+            position: fixed;
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 8vh;
+            background-color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+          
+        
+          
+        .nav-options {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+        }
+        .nav-options li {
+            list-style: none;
+        }
+        .nav-options a {
+            color: rgb(214, 123, 19);
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 15px;
+        }
+        .nav-options a:hover {
+            color: aquamarine;
+        }
+        .home {
+            background-image: url("https://img.freepik.com/premium-photo/border-made-with-cosmetics-products-flowers-blue-background_23-2147891378.jpg?w=2000");
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            color: rgb(180, 178, 178);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            padding: 0px 50px;
+            text-align: right;
+        }
+          
+        .intro {
+            background-color:aliceblue;
+            color:violet;
+            text-align: center;
+            font-size: 30px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id = "navbar">
+            <div class="logo">
+                <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJYxwzTsn8srgaQDpZbUDR7GaGSoqPJz7c9g&usqp=CAU">
+            </div>
+            <ul class="nav-options">
+                <li><a href="/home">HOME</a></li>
+                <li><a href="/cosmetic">GUIDE</a></li>
+                <li><a href="/signin">LOGOUT</a></li>
+            </ul>
+        </nav>
+    </header>  
+
+
+
+        <h1 style="color:rgb(73, 16, 135);"><i><%= q %> Products:</i></h1>
+    
+    <div class="row">
+        <div class="column">
+          <a href= <%= prod1 %>> 
+            <img src= <%= image1 %> style="width:100%"></a>
+          <b>Name:</b> <%= name1 %> <br>
+          <b>Price: </b> <%= price1 %> <br>
+          <br>
+        </div>
+        <div class="column">
+            <a href= <%= prod2 %> >
+                <img src= <%= image2 %> style="width:100%"></a>
+              <b>Name:</b> <%= name2 %> <br>
+              <b>Price: </b> <%= price2 %> <br>
+              <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <a href= <%= prod3 %> >
+                <img src= <%= image3 %> style="width:100%"></a>
+              <b>Name:</b> <%= name3 %> <br>
+              <b>Price: </b> <%= price3 %> <br>
+              <br>
+        </div>
+        <div class="column">
+            <a href= <%= prod4 %> >
+                <img src= <%= image4 %> style="width:100%"></a>
+              <b>Name:</b> <%= name4 %> <br>
+              <b>Price: </b> <%= price4 %> <br>
+              <br>
+        </div> 
+        <div class="column">
+            <a href= <%= prod5 %> >
+                <img src= <%= image5 %> style="width:100%"></a>
+              <b>Name:</b> <%= name5 %> <br>
+              <b>Price: </b> <%= price5 %> <br>
+              <br>
+
+        </div> 
+    </div>
+    <div class="row">
+        <div class="column">
+            <a href= <%= prod6 %> >
+                <img src= <%= image6 %> style="width:100%"></a>
+              <b>Name:</b> <%= name6 %> <br>
+              <b>Price: </b> <%= price6 %> <br>
+              <br>
+        </div>
+        <div class="column">
+            <a href= <%= prod7 %> >
+                <img src= <%= image7 %> style="width:100%"></a>
+              <b>Name:</b> <%= name7 %> <br>
+              <b>Price: </b> <%= price7 %> <br>
+              <br>
+        </div> 
+        <div class="column">
+            <a href= <%= prod8 %> >
+                <img src= <%= image8 %> style="width:100%"></a>
+              <b>Name:</b> <%= name8 %> <br>
+              <b>Price: </b> <%= price8 %> <br>
+              <br>
+
+        </div> 
+
+        <div class="column">
+            <a href= <%= prod9 %> >
+                <img src= <%= image9 %> style="width:100%"></a>
+              <b>Name:</b> <%= name9 %> <br>
+              <b>Price: </b> <%= price9 %> <br>
+              <br>
+
+        </div> 
+
+        <div class="column">
+            <a href= <%= prod10 %> >
+                <img src= <%= image10 %> style="width:100%"></a>
+              <b>Name:</b> <%= name10 %> <br>
+              <b>Price: </b> <%= price10 %> <br>
+              <br>
+
+        </div> 
+
+        
+    </div>
+    <h3 style="background-color:aqua; "> </h3>
+    </section>  
+
+    <section id="cosmetic" class="cosmetic">
+        <div class="intro">
+        </div>
+    </section>
+            
+</body>
+</html>
